@@ -1,5 +1,31 @@
 @import url('https://fonts.googleapis.com/css2? família=Open+Sans:wght@300;400;700&display=swap');
 
+/* Fonte global */
 *{
+    box-sizing: border-box;
     font-family: 'Open Sans';
+}
+
+html,body {
+    background-color: #ddd;
+}
+header{
+    background-color: rgb(0, 255, 136);
+    color: white;
+}
+
+/* Alinhar e centralizar os componentes da barra de navegacao */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*
+a:hover => passe do mouse muda a cor
+text-decoration: none => tirar o sublinhado
+*/
+a, a:hover {
+    text-decoration: none;
+    color: unset;
 }
