@@ -1,17 +1,31 @@
 @import url('https://fonts.googleapis.com/css2? família=Open+Sans:wght@300;400;700&display=swap');
 
-/* Fonte global */
+/* Cores para variaveis */
+:root{
+    --bg-gray: #ddd;
+    --color-primary: rgb(0, 255, 136);
+    --white: #fff;
+}
+/* Global */
 *{
+    margin: 0;
     box-sizing: border-box;
     font-family: 'Open Sans';
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
 html,body {
-    background-color: #ddd;
+    background-color: var(--bg-gray);
 }
 header{
-    background-color: rgb(0, 255, 136);
-    color: white;
+    background-color: var(--color-primary);
+    color: var(--white);
+    height: 60px;
+    display: flex;
+    align-items: center;
 }
 
 /* Alinhar e centralizar os componentes da barra de navegacao */
@@ -19,6 +33,25 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+nav h1{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+nav a{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.dsmovie-contact-container {
+    display: flex;
+    align-items: center;
+}
+
+.dsmovie-contact-container img {
+    margin-right: 8px;
 }
 
 /*
