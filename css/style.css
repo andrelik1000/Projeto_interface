@@ -151,7 +151,7 @@ a, a:hover {
 }
 
 .dsmovie-form-description h3{
-    font-size: 13px;
+    font-size: 20px;
     font-weight: 700;
     margin-bottom: 20px;
 }
@@ -222,3 +222,22 @@ a, a:hover {
    filter: unset;
 }
 
+select{
+    font-family: "Trebuchet MS", Helvetica, sans-serif!important;  
+    background-color: var(--white);
+    color: var(--text-gray);
+    font-size: 12px;
+    background: transparent; ;   
+}
+
+select option{
+    font-family: "Trebuchet MS", Helvetica, sans-serif!important;  
+    width: 260px;
+    margin-left: 16px;
+    background-color: var(--white);
+    height: 38px;
+    line-height: 38px;
+    color: var(--text-gray);
+    font-size: 12px;
+    background: transparent; 
+}
