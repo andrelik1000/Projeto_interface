@@ -11,33 +11,166 @@
 
 *{
     margin: 0;
-    border: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
-    background-color: var(--bg-gray);
-    background-repeat: no-repeat;
+    background-color: var(--white);
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 100vw;
-    min-height: 100vh;
+    width: 100vw;
+    height: 100vh;
 }
 
 .container{
     background-color: var(--white);
-    max-width: 350px;
-    min-height: 40vh;
-    padding: 2rem;
-    box-shadow: 5px 5px 15px ;
+    width: 350px;
+    height: 450px;
+    padding: 6px;
+    display: flex;
+    box-shadow: 0 0 20px 0 darkgray;
     border-radius: 8px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
 }
 
-.container h2 {
-    font-weight: 600;
-    margin-bottom: 2rem;
+form {
+    position: absolute;
+    margin-top: 80px;
+    transition: .5s;
+    width: 300px;
+    height: 400px;
+}
+
+.buttonsForm {
+    margin-top: 40px;
     position: relative;
+    border-radius: 30px;
+    box-shadow: 0 0 7px 0 var(--color-primary);
+}
+
+.buttonsForm button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    position: relative;
+    padding: 10px 29px;
+    margin-left: 5px;
+}
+
+.btnCor {
+    position: absolute;
+    width: 108px;
+    height: 100%;
+    background: linear-gradient(to right, var(--color-primary), var(--white));
+    border-radius: 30px;
+    transition: .3s;
+}
+
+input[type="text"], input[type="password"] {
+    border: none;
+    margin-top: 40px;
+    border-radius: 60px;
+    padding: 8px 0 8px 35px;
+    outline: none;
+    width: 100%;
+}
+
+button[type="submit"] {
+    background: var(--color-primary);
+    color: var(--white);
+    border-radius: 30px;
+    width: 90%;
+    border: none;
+    outline: none;
+    padding: 8px 0 8px 15px;
+    margin-top: 40px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 10.5px;
+}
+
+.lembrarSenha {
+    margin: 10px 0 0 5px;
+    width: 80%;
+    font-size: 13px;
+}
+
+#signin {
+    left: 25px;
+}
+
+#signup {
+    left: 450px;
+}
+
+i {
+    position: absolute;
+    left: 0;
+    padding: 10px 10px;
+}
+
+.iEmail {
+    top: 40px;
+}
+
+.iPassword {
+    top: 114px;
+}
+
+.iPassword2 {
+    top: 190px;
+}
+
+.img {
+    display: flex;
+    align-content: center;
+    margin-left: 94px;
+    margin-top: 20px;
+}
+
+.social-media {
+    display: flex;
+    align-content: center;
+    margin-left: 15px;
+}
+
+.social-media a{
+    text-decoration: none;
+}
+
+.social-media a:first-child img {
+    margin-left: 0;
+}
+
+.alternativa {
+    margin-top: 1rem;
+    margin-right: 1rem ;
+    margin-left: 6.5rem;
+}
+
+.alternativa span {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--text-gray);
+    position: relative;
+}
+
+.alternativa span::before, .alternativa span::after {
+   position: absolute;
+   content: '';
+   height: 1px;
+   width: 100px;
+   bottom: 50%;
+   right: 50px;
+   background: var(--text-gray);
+}
+
+.alternativa span::after{
+    left: 50px;
 }

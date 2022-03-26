@@ -1,44 +1,83 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="css/style_login.css">
+
+    <script src="https://kit.fontawesome.com/da0f9bd54a.js" crossorigin="anonymous"></script>
 
     <title>Login</title>
 </head>
+
 <body>
 
     <div class="container">
-        <h2>Login</h2>
-        <form action="">
-            <div class="input-field">
-                <input 
-                type="text"
-                name="username"
-                id="username"
-                placeholder="Nome de usuário ou email">
-                <div class="underline"></div>
+        <div class="buttonsForm">
+            <div class="btnCor"></div>
+            <button id="btnSignIn">Entrar</button>
+            <button id="btnSignUp">Cadastrar</button>
+        </div>
+
+        <form id="signin">
+            <input type="text" id="email" placeholder="Nome de usuário ou email" required />
+            <i class="fas fa-envelope iEmail"></i>
+
+            <input type="password" id="senha" placeholder="Senha" required />
+            <i class="fas fa-lock iPassword"></i>
+
+            <div class="lembrarSenha">
+                <input type="checkbox">
+                <span>Lembrar senha</span>
             </div>
 
-            <div class="input-field">
-                <input 
-                type="password"
-                name="password"
-                id="password"
-                placeholder="Senha">
-                <div class="underline"></div>
+            <button type="submit" onclick="logar()">Entrar</button>
+
+            <div class="alternativa">
+                <span>OU</span>
             </div>
 
-            <button class="button-entrar">Entrar</button>
+            <div class="img">
+                <div class="social-media">
+                    <a href="#">
+                        <img src="img/google_icon-icons.com_62736.png" alt="Google">
+                    </a>
+                </div>
+
+                <div class="social-media">
+                    <a href="#">
+                        <img src="img/facebook_icon-icons.com_59205.png" alt="Facebook">
+                    </a>
+                </div>
+
+            </div>
+
+        </form>
+
+        <form id="signup">
+
+            <input type="text" placeholder="Nome de usuário ou email" required />
+            <i class="fas fa-envelope iEmail"></i>
+
+            <input type="password" placeholder="Senha" required />
+            <i class="fas fa-lock iPassword"></i>
+
+            <input type="password" placeholder="Confimar senha" required />
+            <i class="fas fa-lock iPassword2"></i>
+
+            <div class="lembrarSenha">
+                <input type="checkbox" required />
+                <span>Termos</span>
+            </div>
+
+            <button type="submit">Cadastrar</button>
         </form>
     </div>
 
-    <div class="footer">
-        <span>Conecte</span>
-    </div>
-    
+    <script src="js/script.js"></script>
 </body>
+
 </html>
