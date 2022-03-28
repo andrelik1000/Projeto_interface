@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2? família=Open+Sans:wght@300;400;700&display=swap');
+
+/* Cores para variaveis */
+
+:root{
+    --bg-gray: #ddd;
+    --color-primary: #032541;
+    --white: #fff;
+    --text-gray: #4a4a4a;
+    --text-light-gray: #aaa;
+    --star-yellow: #FFBB3A;
+}
+/* Global */
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+html, body{
+    background-color: var(--bg-gray);
+}
+
+header{
+    background-color: var(--color-primary);
+    color: var(--white);
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+/* Alinhar e centralizar os componentes da barra de navegacao */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h1{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+nav a{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.dsmovie-contact-container {
+    display: flex;
+    align-items: center;
+}
+
+.dsmovie-contact-container img {
+    margin-right: 8px;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: unset;
+}
+
+/* Slides */
+
+.slide {
+    width: 1024px;
+    height: 576px;
+    background-color: #032541;
+    margin: 5px auto auto;
+    display: flex;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: all 0.4s;
+}
+
+.slides{
+    width: 512px;
+    display: flex;
+}
+
+.images img{
+    width: 1024px;
+    height: 576px;
+}
+
+#atual{
+    margin-left: 0;
+    transition: all 2s;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    position: absolute;
+    color: var(--white);
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-size: 1.7em;
+    margin-top: -5px;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover{
+    transform: scale(1.5);
+}
+
+#anterior{
+    top: 50%;
+    left: 10%;
+}
+
+#proximo{
+    top: 50%;
+    right: 10%;
+}
+
+.balls{
+    position: absolute;
+    width: 1024px;
+    display: flex;
+    justify-content: center;
+    margin-top: -45px;
+}
+
+.balls div{
+    transition: all 0.5s;
+    border: 3px solid var(--white);
+    padding: 6px;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.balls div:hover{
+    background-color: var(--white);
+}
+
+.imgAtual{
+    transition: all 0.5s;
+    background: var(--white);
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 50%;
+    bottom: 20px;
+    left:50%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--star-yellow);
+    text-align: center;
+  }
+
+
+

@@ -22,7 +22,7 @@ function logar(){
     var senha = document.getElementById('senha').value;
 
     if(email == "admin" && senha == "admin"){
-        alert("Usuário logado")
+        location.href = "form.html"
     }else{
         alert('E-mail ou senha incorretos')
     }

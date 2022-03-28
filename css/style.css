@@ -241,3 +241,24 @@ select option{
     font-size: 12px;
     background: transparent; 
 }
+
+.resp-container{
+    display: flex;
+    flex-flow: row;
+    overflow-x: scroll;
+}
+
+.resp-item {
+    white-space: nowrap;
+}
+
+.comentario {
+    background: var(--text-light-gray);
+    color: var(--white);
+    padding: 15px;
+    text-align: center;
+}
+
+div.avaliacao-comentadas.ativo {
+    height: 100px;
+}
