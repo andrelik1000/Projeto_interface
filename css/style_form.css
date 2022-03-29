@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2? família=Open+Sans:wght@300;400;700&display=swap');
+
+/* Cores para variaveis */
+:root{
+    --bg-gray: #ddd;
+    --color-primary: #032541;
+    --white: #fff;
+    --text-gray: #4a4a4a;
+    --text-light-gray: #aaa;
+    --star-yellow: #FFBB3A;
+}
+/* Global */
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+html,body {
+    background-color: var(--bg-gray);
+    background-image: linear-gradient(70deg, #161616,rgb(87, 139, 139));
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+html,body {
+    background-color: var(--bg-gray);
+}
+
+.dsmovie-form-container {
+    padding: 40px 0;
+    max-width: 480px;
+}
+
+.dsmovie-form-description {
+    background-color: var(--white);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 0 8px 8px;
+}
+
+.dsmovie-form-description h3{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.dsmovie-form {
+    width: 100%;
+}
+
+.dsmovie-form-group{
+    margin-bottom: 20px;
+}
+
+.dsmovie-form-group label{
+    font-size: 12px;
+    color: var(--text-light-gray);
+}
+
+.dsmovie-form-btn-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+    justify-content: space-between;
+    
+}
+
+.dsmovie-pagination-container {
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.dsmovie-pagination-box{
+    display: flex;
+    width: 180px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dsmovie-pagination-box p{
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--text-gray);
+}
+
+.dsmovie-pagination-box button {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dsmovie-pagination-box button:disabled {
+    border: 1px solid var(--text-light-gray);
+}
+
+.container{
+    background-color: #032541;
+}
+
+
+/* Mudar cor da imagem svg */
+
+.dsmovie-pagination-box button img{
+    filter: brightness(0) saturate(100%) invert(9%) sepia(48%) saturate(3075%) hue-rotate(190deg) brightness(96%) contrast(98%);
+}
+
+.dsmovie-pagination-box button:disabled img{
+   filter: unset;
+}
+
+select{
+    font-family: "Trebuchet MS", Helvetica, sans-serif!important;  
+    background-color: var(--white);
+    color: var(--text-gray);
+    font-size: 12px;
+    background: transparent; ;   
+}
+
+select option{
+    font-family: "Trebuchet MS", Helvetica, sans-serif!important;  
+    width: 260px;
+    margin-left: 16px;
+    background-color: var(--white);
+    height: 38px;
+    line-height: 38px;
+    color: var(--text-gray);
+    font-size: 12px;
+    background: transparent; 
+}
+
+.resp-container{
+    display: flex;
+    flex-flow: row;
+    overflow-x: scroll;
+}
+
+.resp-item {
+    white-space: nowrap;
+}
+
+.comentario {
+    background: var(--text-light-gray);
+    color: var(--white);
+    padding: 15px;
+    text-align: center;
+}
+
+div.avaliacao-comentadas.ativo {
+    height: 100px;
+}

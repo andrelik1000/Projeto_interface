@@ -16,9 +16,11 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-#032541 #032541">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">DsMovie</a>
+            <a class="navbar-brand" href="#">
+                AE
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -84,7 +86,7 @@
         </div>
     </nav>
 
-    <main>
+    <main class="fundo">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -310,6 +312,76 @@
 
     </main>
 
+    <footer class="bg-light text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a
+              class="btn btn-primary btn-floating m-1"
+              style="background-color: #3b5998;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+      
+            <!-- Twitter -->
+            <a
+              class="btn btn-primary btn-floating m-1"
+              style="background-color: #55acee;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+      
+            <!-- Google -->
+            <a
+              class="btn btn-primary btn-floating m-1"
+              style="background-color: #dd4b39;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-google"></i
+            ></a>
+      
+            <!-- Instagram -->
+            <a
+              class="btn btn-primary btn-floating m-1"
+              style="background-color: #ac2bac;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+      
+            <!-- Linkedin -->
+            <a
+              class="btn btn-primary btn-floating m-1"
+              style="background-color: #0082ca;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <!-- Github -->
+            <a
+              class="btn btn-primary btn-floating m-1"
+              style="background-color: #333333;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2020 Copyright:
+          <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
@@ -319,36 +391,5 @@
         crossorigin="anonymous"></script>
 </body>
 
-<!-- <script>
-    /* 
-    itens : deverá receber um array
-    pagAtual: receberá o numero de paginas que o usuarios deseja acessar
-    limiItens: demilita quantos itens por pagina
-    funcao Math.Ceil: verificacao de quantas paginas tem
-     */
-    function listItens(itens, pagAtual, limiItens) {
-        let result = [];
-        let totalPag = Math.ceil(itens.length / limiItens);
-        let count = (pagAtual * limiItens) - limiItens;
-        let delimitador = count + limiItens
-
-        if (pagAtual <= totalPag) {
-            for (let i = count; i < delimitador; i++) {
-                if (itens[i] != null) {
-                    result.push(itens[i])
-                }
-                count++;
-            }
-        }
-
-        return result;
-    }
-
-    var next = ['Next 1', 'Next 2', 'Next 3', 'Next 4', 'Next 5'];
-    var resultNext = listItems(next, 1, 2);
-    var resultNext2 = listItems(next, 2, 2);
-    var resultNext3 = listItems(next, 3, 2);
-
-</script> -->
 
 </html>
