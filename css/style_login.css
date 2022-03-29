@@ -48,7 +48,7 @@ form {
 }
 
 .buttonsForm {
-    margin-top: 40px;
+    margin-top: 20px;
     position: relative;
     border-radius: 30px;
     box-shadow: 0 0 7px 0 var(--color-primary);
@@ -175,4 +175,14 @@ i {
 
 .alternativa span::after{
     left: 50px;
+}
+
+.voltar {
+    color:navy;
+    background: white;
+    text-align: justify;
+    width: 320px;
+    float:left;
+    margin-top: 5px;
+    cursor: pointer;
 }
