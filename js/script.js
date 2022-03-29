@@ -17,13 +17,20 @@ document.querySelector('#btnSignUp').addEventListener('click', () => {
 /* LOGAR */
 
 function logar(){
-    var email = document.getElementById('email').value;
+    let email = document.getElementById('email').value;
+    let senha = document.getElementById('senha').value;
 
-    var senha = document.getElementById('senha').value;
+    let headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+    headers.append('Accept', 'application/json');  
+    headers.append('GET', 'POST', 'OPTIONS');
 
-    if(email == "admin" && senha == "admin"){
-        location.href = "form.html"
-    }else{
-        alert('E-mail ou senha incorretos')
-    }
+    fetch("https://elany-cors-proxy.herokuapp.com/https://projeto-interface-api.herokuapp.com/", {
+        method: 'GET',
+        headers: headers,
+    }).then(response => response.json())
+    .then(json => {
+        alert(json.message)
+    })
+
 }
