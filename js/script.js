@@ -20,7 +20,7 @@ async function logar(){
     let email = document.getElementById('email').value;
     let password = document.getElementById('senha').value;
 
-    if(!validate(email, senha)) return alert("Preencha todos os campos!");
+    if(!validate(email, password)) return alert("Preencha todos os campos!");
     sendLoginRequest({ email, password });
 }
 
