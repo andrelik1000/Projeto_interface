@@ -137,23 +137,7 @@ a, a:hover {
     background-color: rgb(106, 106, 110);
     cursor: pointer;
 }
-.dsmovie-btn-login{
-    background-color: rgba(0, 0, 0, 0.9);
-    border: none;
-    padding: 15px;
-    width: 100%;
-    border-radius: 4px;
-    color: white;
-    font-size: 14px;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    text-decoration-line: none;
-    
-    
-}
+
 
 /* Style do Formulario */
 
