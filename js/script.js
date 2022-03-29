@@ -49,3 +49,11 @@ function validate(email, password){
     return email.length > 0 && password.length > 0
 }
 
+function showPassword() {
+    var x = document.getElementById("senha");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+}
