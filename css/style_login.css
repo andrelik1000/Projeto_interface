@@ -48,10 +48,12 @@ form {
 }
 
 .buttonsForm {
-    margin-top: 40px;
+    margin-top: 20px;
     position: relative;
     border-radius: 30px;
     box-shadow: 0 0 7px 0 var(--color-primary);
+    align-items: center;
+    justify-content: center;
 }
 
 .buttonsForm button {
@@ -59,7 +61,7 @@ form {
     background: transparent;
     border: none;
     position: relative;
-    padding: 10px 29px;
+    padding: 10px 22.5px;
 }
 
 .btnCor {
@@ -67,8 +69,9 @@ form {
     width: 108px;
     height: 100%;
     background: linear-gradient(to right, var(--color-primary), var(--white));
-    border-radius: 30px;
+    border-radius: 19px;
     transition: .3s;
+    
 }
 
 input[type="text"], input[type="password"] {
@@ -150,7 +153,7 @@ i {
 .alternativa {
     margin-top: 1rem;
     margin-right: 1rem ;
-    margin-left: 6.5rem;
+    margin-left: 8.5rem;
 }
 
 .alternativa span {
@@ -172,4 +175,14 @@ i {
 
 .alternativa span::after{
     left: 50px;
+}
+
+.voltar {
+    color:navy;
+    background: white;
+    text-align: justify;
+    width: 320px;
+    float:left;
+    margin-top: 5px;
+    cursor: pointer;
 }

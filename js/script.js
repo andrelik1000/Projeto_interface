@@ -32,5 +32,4 @@ function logar(){
     .then(json => {
         alert(json.message)
     })
-
 }
