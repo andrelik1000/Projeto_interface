@@ -12,45 +12,71 @@
 
     <link rel="stylesheet" href="css/style_filmes.css">
 
+    <script src="https://kit.fontawesome.com/da0f9bd54a.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    
-    <nav class="navbar navbar-expand-lg navbar-#032541 bg-#032541">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">AE</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Avaliar
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="filmes.html">Filmes</a></li>
-                  <li><a class="dropdown-item" href="series.html">Series</a></li>
-                </ul>
-              </li>
-            </ul>
-           
-            <div class="d-flex">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Elany Ferreira</a>
-                </li>
-                <li class="nav-item">
-                    <!-- Button trigger modal -->
-                
-                    <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Sair</a>
-                  
 
-                  <!-- Modal -->
-                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <nav class="navbar navbar-expand-lg navbar-brand bg-#032541">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">AE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="series.html">Séries</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Suporte</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-duotone fa-plus"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">
+                                    Não encontrou o filme ou série <br>
+                                    que procurava?<br>
+                                    Entre com uma conta e adicione<br>
+                                    ao nosso banco<br>
+                                    de dados.
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Pesquisar filmes ou séries"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                </form>
+
+                <div class="d-flex">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      
+                      <li class="nav-item">
+                          <!-- Button trigger modal -->
+                      
+                          <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Sair</a>
+                      </li>
+                       
+                    </ul>
+                    
+                </div>
+                
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                       <div class="modal-content">
                         <div class="modal-header">
@@ -59,24 +85,20 @@
                         </div>
                         
                         <div class="modal-footer">
-                          
-                          <button type="button" class="dsmovie-btn">Sair</button>
+                          <a href="index.html">
+                            <button type="button" class="dsmovie-btn">Sair</button>
+                          </a>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </li>
-                 
-              </ul>
-              
+                  </div>                
+
             </div>
-            
-          </div>
         </div>
     </nav>
+    
 
     <main>
-      
     
       <section id="dsmovie-card-list" class="container">
         <!-- row: organizacao dos cards em linhas  -->
@@ -371,37 +393,5 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
-
-<!-- <script>
-    /* 
-    itens : deverá receber um array
-    pagAtual: receberá o numero de paginas que o usuarios deseja acessar
-    limiItens: demilita quantos itens por pagina
-    funcao Math.Ceil: verificacao de quantas paginas tem
-     */
-    function listItens(itens, pagAtual, limiItens) {
-        let result = [];
-        let totalPag = Math.ceil(itens.length / limiItens);
-        let count = (pagAtual * limiItens) - limiItens;
-        let delimitador = count + limiItens
-
-        if (pagAtual <= totalPag) {
-            for (let i = count; i < delimitador; i++) {
-                if (itens[i] != null) {
-                    result.push(itens[i])
-                }
-                count++;
-            }
-        }
-
-        return result;
-    }
-
-    var next = ['Next 1', 'Next 2', 'Next 3', 'Next 4', 'Next 5'];
-    var resultNext = listItems(next, 1, 2);
-    var resultNext2 = listItems(next, 2, 2);
-    var resultNext3 = listItems(next, 3, 2);
-
-</script> -->
 
 </html>

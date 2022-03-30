@@ -12,15 +12,15 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+    <script src="https://kit.fontawesome.com/da0f9bd54a.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-#032541 #032541">
+    <nav class="navbar navbar-expand-lg navbar-brand bg-#032541">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                AE
-            </a>
+            <a class="navbar-brand" href="#">AE</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -28,60 +28,38 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" href="filmes.html">Filmes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="series.html">Séries</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Suporte</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            Avaliar
+                            <i class="fa-duotone fa-plus"></i>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="filmes.html">Filmes</a></li>
-                            <li><a class="dropdown-item" href="series.html">Series</a></li>
+                            <li><a class="dropdown-item" href="#">
+                                    Não encontrou o filme ou série <br>
+                                    que procurava?<br>
+                                    Entre com uma conta e adicione<br>
+                                    ao nosso banco<br>
+                                    de dados.
+                                </a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
-
-                <div class="d-flex">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Elany Ferreira</a>
-                        </li>
-                        <li class="nav-item">
-                            <!-- Button trigger modal -->
-
-                            <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">Sair</a>
-
-
-                            <!-- Modal -->
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title">Deseja realmente sair?</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-
-                                        <div class="modal-footer">
-                                            <a href="login.html">
-                                                <button type="button" class="dsmovie-btn">
-                                                    Sair
-                                                </button>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                    </ul>
-
-                </div>
-
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Pesquisar filmes ou séries"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                </form>
             </div>
         </div>
     </nav>
@@ -308,6 +286,174 @@
                     </div>
                 </div>
 
+                <div class="col-sm-6 col-lg-4 col-xl-3 mb-3">
+                    <div class="dsmovie-card">
+                        <img src="img/Thenevers.jpg" alt="The nevers">
+                        <div class="dsmovie-card-descrition">
+                            <h3>The Nevers</h3>
+                            <div class="dsmovie-card-description-bottom">
+                                <h4>3.8</h4>
+                                <div>
+                                    <img src="../img/estrela5.svg" alt="Star">
+                                    <img src="../img/estrela4.svg" alt="Star">
+                                    <img src="../img/estrela3.svg" alt="Star">
+                                    <img src="../img/estrela2.svg" alt="Star">
+                                    <img src="../img/estrela1.svg" alt="Star">
+                                </div>
+                                <p>10 avaliações</p>
+                                <a class="dsmovie-btn" href="arq_form/form.html">Avaliar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 col-xl-3 mb-3">
+                    <div class="dsmovie-card">
+                        <img src="img/Thenevers.jpg" alt="The nevers">
+                        <div class="dsmovie-card-descrition">
+                            <h3>The Nevers</h3>
+                            <div class="dsmovie-card-description-bottom">
+                                <h4>3.8</h4>
+                                <div>
+                                    <img src="../img/estrela5.svg" alt="Star">
+                                    <img src="../img/estrela4.svg" alt="Star">
+                                    <img src="../img/estrela3.svg" alt="Star">
+                                    <img src="../img/estrela2.svg" alt="Star">
+                                    <img src="../img/estrela1.svg" alt="Star">
+                                </div>
+                                <p>10 avaliações</p>
+                                <a class="dsmovie-btn" href="arq_form/form.html">Avaliar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 col-xl-3 mb-3">
+                    <div class="dsmovie-card">
+                        <img src="img/Thenevers.jpg" alt="The nevers">
+                        <div class="dsmovie-card-descrition">
+                            <h3>The Nevers</h3>
+                            <div class="dsmovie-card-description-bottom">
+                                <h4>3.8</h4>
+                                <div>
+                                    <img src="../img/estrela5.svg" alt="Star">
+                                    <img src="../img/estrela4.svg" alt="Star">
+                                    <img src="../img/estrela3.svg" alt="Star">
+                                    <img src="../img/estrela2.svg" alt="Star">
+                                    <img src="../img/estrela1.svg" alt="Star">
+                                </div>
+                                <p>10 avaliações</p>
+                                <a class="dsmovie-btn" href="arq_form/form.html">Avaliar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 col-xl-3 mb-3">
+                    <div class="dsmovie-card">
+                        <img src="img/Thenevers.jpg" alt="The nevers">
+                        <div class="dsmovie-card-descrition">
+                            <h3>The Nevers</h3>
+                            <div class="dsmovie-card-description-bottom">
+                                <h4>3.8</h4>
+                                <div>
+                                    <img src="../img/estrela5.svg" alt="Star">
+                                    <img src="../img/estrela4.svg" alt="Star">
+                                    <img src="../img/estrela3.svg" alt="Star">
+                                    <img src="../img/estrela2.svg" alt="Star">
+                                    <img src="../img/estrela1.svg" alt="Star">
+                                </div>
+                                <p>10 avaliações</p>
+                                <a class="dsmovie-btn" href="arq_form/form.html">Avaliar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 col-xl-3 mb-3">
+                    <div class="dsmovie-card">
+                        <img src="img/Thenevers.jpg" alt="The nevers">
+                        <div class="dsmovie-card-descrition">
+                            <h3>The Nevers</h3>
+                            <div class="dsmovie-card-description-bottom">
+                                <h4>3.8</h4>
+                                <div>
+                                    <img src="../img/estrela5.svg" alt="Star">
+                                    <img src="../img/estrela4.svg" alt="Star">
+                                    <img src="../img/estrela3.svg" alt="Star">
+                                    <img src="../img/estrela2.svg" alt="Star">
+                                    <img src="../img/estrela1.svg" alt="Star">
+                                </div>
+                                <p>10 avaliações</p>
+                                <a class="dsmovie-btn" href="arq_form/form.html">Avaliar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 col-xl-3 mb-3">
+                    <div class="dsmovie-card">
+                        <img src="img/Thenevers.jpg" alt="The nevers">
+                        <div class="dsmovie-card-descrition">
+                            <h3>The Nevers</h3>
+                            <div class="dsmovie-card-description-bottom">
+                                <h4>3.8</h4>
+                                <div>
+                                    <img src="../img/estrela5.svg" alt="Star">
+                                    <img src="../img/estrela4.svg" alt="Star">
+                                    <img src="../img/estrela3.svg" alt="Star">
+                                    <img src="../img/estrela2.svg" alt="Star">
+                                    <img src="../img/estrela1.svg" alt="Star">
+                                </div>
+                                <p>10 avaliações</p>
+                                <a class="dsmovie-btn" href="arq_form/form.html">Avaliar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 col-xl-3 mb-3">
+                    <div class="dsmovie-card">
+                        <img src="img/Thenevers.jpg" alt="The nevers">
+                        <div class="dsmovie-card-descrition">
+                            <h3>The Nevers</h3>
+                            <div class="dsmovie-card-description-bottom">
+                                <h4>3.8</h4>
+                                <div>
+                                    <img src="../img/estrela5.svg" alt="Star">
+                                    <img src="../img/estrela4.svg" alt="Star">
+                                    <img src="../img/estrela3.svg" alt="Star">
+                                    <img src="../img/estrela2.svg" alt="Star">
+                                    <img src="../img/estrela1.svg" alt="Star">
+                                </div>
+                                <p>10 avaliações</p>
+                                <a class="dsmovie-btn" href="arq_form/form.html">Avaliar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 col-xl-3 mb-3">
+                    <div class="dsmovie-card">
+                        <img src="img/Thenevers.jpg" alt="The nevers">
+                        <div class="dsmovie-card-descrition">
+                            <h3>The Nevers</h3>
+                            <div class="dsmovie-card-description-bottom">
+                                <h4>3.8</h4>
+                                <div>
+                                    <img src="../img/estrela5.svg" alt="Star">
+                                    <img src="../img/estrela4.svg" alt="Star">
+                                    <img src="../img/estrela3.svg" alt="Star">
+                                    <img src="../img/estrela2.svg" alt="Star">
+                                    <img src="../img/estrela1.svg" alt="Star">
+                                </div>
+                                <p>10 avaliações</p>
+                                <a class="dsmovie-btn" href="arq_form/form.html">Avaliar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
         </section>
 
     </main>
@@ -315,72 +461,42 @@
     <footer class="bg-light text-center text-white">
         <!-- Grid container -->
         <div class="container p-4 pb-0">
-          <!-- Section: Social media -->
-          <section class="mb-4">
-            <!-- Facebook -->
-            <a
-              class="btn btn-primary btn-floating m-1"
-              style="background-color: #3b5998;"
-              href="#!"
-              role="button"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-      
-            <!-- Twitter -->
-            <a
-              class="btn btn-primary btn-floating m-1"
-              style="background-color: #55acee;"
-              href="#!"
-              role="button"
-              ><i class="fab fa-twitter"></i
-            ></a>
-      
-            <!-- Google -->
-            <a
-              class="btn btn-primary btn-floating m-1"
-              style="background-color: #dd4b39;"
-              href="#!"
-              role="button"
-              ><i class="fab fa-google"></i
-            ></a>
-      
-            <!-- Instagram -->
-            <a
-              class="btn btn-primary btn-floating m-1"
-              style="background-color: #ac2bac;"
-              href="#!"
-              role="button"
-              ><i class="fab fa-instagram"></i
-            ></a>
-      
-            <!-- Linkedin -->
-            <a
-              class="btn btn-primary btn-floating m-1"
-              style="background-color: #0082ca;"
-              href="#!"
-              role="button"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <!-- Github -->
-            <a
-              class="btn btn-primary btn-floating m-1"
-              style="background-color: #333333;"
-              href="#!"
-              role="button"
-              ><i class="fab fa-github"></i
-            ></a>
-          </section>
-          <!-- Section: Social media -->
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #032541;" href="#!"
+                    role="button"><i class="fab fa-facebook"></i>
+                </a>
+
+                <!-- Twitter -->
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee;" href="#!"
+                    role="button"><i class="fab fa-twitter"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;" href="#!"
+                    role="button"><i class="fab fa-instagram"></i></a>
+
+                <!-- Youtube -->
+                <a class="btn btn-primary btn-floating m-1" style="background-color: red;" href="#!" role="button"><i
+                        class="fab fa-youtube"></i></a>
+                
+                <!-- Linkedin -->
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee;" href="#!"
+                    role="button"><i class="fab fa-linkedin"></i></a>
+
+            </section>
+            <!-- Section: Social media -->
         </div>
         <!-- Grid container -->
-      
+
         <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2020 Copyright:
-          <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        <div class="text-center p-3" style="background-color: #032541;">
+            © 2022 Copyright:
+            <a class="text-white" href="https://github.com/IMachine-Man/Projeto_Interface"> <img src="img/Vector.svg"
+                    alt="GitHub"></i>GitHub</a>
         </div>
         <!-- Copyright -->
-      </footer>
+    </footer>
 
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"

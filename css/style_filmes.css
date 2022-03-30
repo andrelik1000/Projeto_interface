@@ -45,6 +45,8 @@ nav{
     height: 60px;
     display: flex;
     align-items: center;
+    margin-right: 0px;
+    width: 100%;
 }
 
 nav a{
@@ -54,6 +56,50 @@ nav a{
 a, a:hover {
     text-decoration: none;
     color: unset;
+}
+
+main{
+    margin: 0px;
+    background-color: var(--white-gray);
+}
+
+.container-fluid{
+    align-items: center;
+    margin: 0 20px;
+    justify-content: center;
+}
+
+li a{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.d-flex{
+    border:0;
+    width: 500px;
+}
+
+.d-flex button{
+    color: var(--white); 
+}
+
+.d-flex button:hover{
+    transition: all 0.5s;
+    background-color: var(--color-primary);
+    float:left; 
+    transform: scale(1.2); 
+}
+
+.collapse{
+    margin-left: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.collapse ul{
+    margin-right: 50px;
+    align-items: center;
+    justify-content: center;
 }
 
 #dsmovie-card-list {
@@ -129,6 +175,15 @@ a, a:hover {
 .dsmovie-btn:hover{
     background-color: rgb(106, 106, 110);
     cursor: pointer;
+}
+
+footer{
+    background-color: var(--white);
+    box-shadow: 2px 0 1px 0 var(--color-primary);
+}
+
+.mb-4 a{
+    border-radius: 300px 300px 300px 300px;
 }
 
 

@@ -40,6 +40,8 @@ function sendLoginRequest(body) {
     .then(response => response.json()).then(Jres => {
         //Here you can work with the JSON parsed response
     });
+
+    return location.href= "arq_form/form.html"
 }
 
 function validate(email, password){
