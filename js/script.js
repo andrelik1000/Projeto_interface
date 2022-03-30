@@ -42,6 +42,7 @@ function sendLoginRequest(body) {
         if(Jres.statusCode && (Jres.statusCode === 400 || Jres.statusCode === 401)){
             return alert("Email ou senha inválida!")
         }
+        sessionStorage.setItem("secret", Jres.access_token)
     });
 
     return location.href= "arq_form/form.html"
