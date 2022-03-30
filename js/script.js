@@ -37,15 +37,16 @@ function sendLoginRequest(body) {
     }
     
     fetch("https://elany-cors-proxy.herokuapp.com/https://projeto-interface-api.herokuapp.com/login", options)
-    .then(response => response.json()).then(Jres => {
+    .then(response => response.json()).then(async Jres => {
         //Here you can work with the JSON parsed response
         if(Jres.statusCode && (Jres.statusCode === 400 || Jres.statusCode === 401)){
             return alert("Email ou senha inválida!")
         }
-        sessionStorage.setItem("secret", Jres.access_token)
+        await sessionStorage.setItem("secret", Jres.access_token)
+        return location.href= "arq_form/form.html"
     });
 
-    return location.href= "arq_form/form.html"
+    
 }
 
 function validate(email, password){
