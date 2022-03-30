@@ -1,6 +1,8 @@
-var formEntrar =document.querySelector('#signin')
-var formCadastrar =document.querySelector('#signup')
-var btnCor =document.querySelector('.btnCor')
+var formEntrar = document.querySelector('#signin')
+var formCadastrar = document.querySelector('#signup')
+var btnCor = document.querySelector('.btnCor')
+const corsProxy = "https://elany-cors-proxy.herokuapp.com/"
+const apiUrl = "https://projeto-interface-api.herokuapp.com"
 
 document.querySelector('#btnSignIn').addEventListener('click', () => {
     formEntrar.style.left = "25px",
@@ -15,7 +17,6 @@ document.querySelector('#btnSignUp').addEventListener('click', () => {
 })
 
 /* LOGAR */
-
 async function logar(){
     let email = document.getElementById('email').value;
     let password = document.getElementById('senha').value;
@@ -25,7 +26,6 @@ async function logar(){
 }
 
 function sendLoginRequest(body) {
-
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
     headers.append('Accept', 'application/json');  
@@ -36,7 +36,7 @@ function sendLoginRequest(body) {
         body: JSON.stringify(body)
     }
     
-    fetch("https://elany-cors-proxy.herokuapp.com/https://projeto-interface-api.herokuapp.com/login", options)
+    fetch(`${corsProxy}${apiUrl}/login`, options)
     .then(response => response.json()).then(async Jres => {
         //Here you can work with the JSON parsed response
         if(Jres.statusCode && (Jres.statusCode === 400 || Jres.statusCode === 401)){
@@ -46,7 +46,6 @@ function sendLoginRequest(body) {
         return location.href= "arq_form/form.html"
     });
 
-    
 }
 
 function validate(email, password){
