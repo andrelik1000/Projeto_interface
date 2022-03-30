@@ -16,20 +16,13 @@
 <body>
 
     <div class="container">
-
-        <div class="voltar">
-            <a href="index.html">
-                <img src="img/setamenor.svg" alt="Voltar">
-            </a>
-        </div>
-        
         <div class="buttonsForm">
             <div class="btnCor"></div>
             <button id="btnSignIn">Entrar</button>
             <button id="btnSignUp">Cadastrar</button>
         </div>
-
-        <form id="signin">
+        <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+        <form action="#" target="dummyframe" id="signin">
             <input type="text" id="email" placeholder="E-mail do usuário" required />
             <i class="fas fa-envelope iEmail"></i>
 
@@ -37,11 +30,11 @@
             <i class="fas fa-lock iPassword"></i>
 
             <div class="lembrarSenha">
-                <input type="checkbox">
-                <span>Lembrar senha</span>
+                <input type="checkbox" onclick="showPassword()">
+                <span>Mostrar Senha</span>
             </div>
 
-            <button type="submit" onclick=logar()>Entrar</button>
+            <button type="submit" onclick="logar()">Entrar</button>
 
             <div class="alternativa">
                 <span>OU</span>

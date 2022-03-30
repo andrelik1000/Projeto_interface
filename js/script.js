@@ -20,7 +20,7 @@ async function logar(){
     let email = document.getElementById('email').value;
     let password = document.getElementById('senha').value;
 
-    if(!validate(email, senha)) return alert("Preencha todos os campos!");
+    if(!validate(email, password)) return alert("Preencha todos os campos!");
     sendLoginRequest({ email, password });
 }
 
@@ -39,6 +39,9 @@ function sendLoginRequest(body) {
     fetch("https://elany-cors-proxy.herokuapp.com/https://projeto-interface-api.herokuapp.com/login", options)
     .then(response => response.json()).then(Jres => {
         //Here you can work with the JSON parsed response
+        if(Jres.statusCode && (Jres.statusCode === 400 || Jres.statusCode === 401)){
+            return alert("Email ou senha inválida!")
+        }
     });
 
     return location.href= "arq_form/form.html"
@@ -46,4 +49,13 @@ function sendLoginRequest(body) {
 
 function validate(email, password){
     return email.length > 0 && password.length > 0
+}
+
+function showPassword() {
+    var x = document.getElementById("senha");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
 }
