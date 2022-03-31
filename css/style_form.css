@@ -105,15 +105,36 @@ li a{
     justify-content: center;
 }
 
+.corpo{
+    width: 80%;
+    margin: auto;
+
+}
+
+.card-form{
+    display: table;
+    margin-left: 10px;
+}
+
 #dsmovie-card-list {
     padding: 10px 1px;
 }
 
 .dsmovie-card {
-    width: 100%;
+    width: 30%;
     border: var(--color-primary);
     box-shadow: 0 0 20px 0 darkgray;
     border-radius: 8px 8px 0 0;
+    display: table-cell;
+    float: left;
+}
+
+.paragrafo{
+    display: table-cell;
+    float: left;
+    width: 70%;
+    margin-top: 5px;
+    margin-left: 0;
 }
 
 .dsmovie-card img {
@@ -251,7 +272,3 @@ footer{
 .dsmovie-pagination-box button:disabled img{
    filter: unset;
 }
-
-
-
-
