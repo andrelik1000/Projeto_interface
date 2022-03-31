@@ -304,3 +304,9 @@ footer{
 .dsmovie-pagination-box button:disabled img{
    filter: unset;
 }
+.dsmovie-form-group-coment{
+    margin: 1%;
+}
+.dsmovie-form-group-ava{
+    margin: 1%;
+}

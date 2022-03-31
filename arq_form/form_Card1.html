@@ -114,7 +114,44 @@
                 <img src="../img/estrela1.svg" alt="Star">
               </div>
               <p>50 avaliações</p>
-              <a class="dsmovie-btn" href="login.html">Avaliar</a>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                Avaliar
+              </button>
+
+<!-- Modal -->
+              <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Deixe sua avaliação</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <label for="score">Comentario</label>
+                      <div class="form-group dsmovie-form-group-coment">
+                        <input class="form-control" type="Comentario" id="Comentario">
+                    </div>
+                      <div class="form-group dsmovie-form-group-av">
+                        <label for="score">Informe sua avaliação</label>
+                        <select class="form-control" name="score" id="score">
+                            <option value="1" selected>Selecione</option>
+                            <option value="1">1 - Ruim</option>
+                            <option value="2">2 - Regular</option>
+                            <option value="3">3 - Bom</option>
+                            <option value="4">4 - Muito bom</option>
+                            <option value="5">5 - Excelente</option>
+                        </select>
+                    </div>
+
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                      <button type="button" class="btn btn-primary">Comentar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -122,8 +159,8 @@
         <div class="paragrafo">
             <h4>SINOPSE</h4>
           <p align="justify">
-            Não recomendado para menores de 12 anos
-            Em Vingadores: Ultimato, após Thanos eliminar metade das criaturas vivas
+            <ht>Não recomendado para menores de 12 anos</ht>
+            Em Vingadores Ultimato, após Thanos eliminar metade das criaturas vivas
             em Vingadores: Guerra Infinita, os heróis precisam lidar com a dor da perda
             de amigos e seus entes queridos. Com Tony Stark (Robert Downey Jr.) vagando
             perdido no espaço sem água nem comida, o Capitão América/Steve Rogers (Chris
