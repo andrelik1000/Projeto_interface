@@ -310,3 +310,10 @@ footer{
 .dsmovie-form-group-ava{
     margin: 1%;
 }
+
+
+
+#Comentario{
+    min-height: 150px;
+    max-height: 150px;
+}
