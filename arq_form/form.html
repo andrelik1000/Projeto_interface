@@ -101,9 +101,11 @@
 
       <div class="card-form">
         <div class="dsmovie-card">
-          <img id="img-banner">
+            
+            <div class="ds-movie-card-img" id="banner"></div>
+         
           <div class="dsmovie-card-descrition">
-            <h4>Vingadores</h4>
+            <h4 id="nome_do_filme"></h4>
             <div class="dsmovie-card-description-bottom">
               <h4>4.4</h4>
               <div>
@@ -158,14 +160,10 @@
 
         <div class="paragrafo">
             <h4>SINOPSE</h4>
-          <p align="justify">
-            <ht>Não recomendado para menores de 12 anos</ht>
-            Em Vingadores Ultimato, após Thanos eliminar metade das criaturas vivas
-            em Vingadores: Guerra Infinita, os heróis precisam lidar com a dor da perda
-            de amigos e seus entes queridos. Com Tony Stark (Robert Downey Jr.) vagando
-            perdido no espaço sem água nem comida, o Capitão América/Steve Rogers (Chris
-            Evans) e a Viúva Negra/Natasha Romanov (Scarlett Johansson) precisam liderar
-            a resistência contra o titã louco.</p>
+            <strong id="recomendacao"></strong>
+            <p align="justify" id="descricao">
+            
+            </p>
         </div>
         <div class="info">
           <p>
@@ -235,8 +233,10 @@
     </div>
     <!-- Copyright -->
   </footer>
-
-  <script src="../js/script.js"></script>
+  
+  
+  <script src="../form.js"></script>
+ 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
     crossorigin="anonymous"></script>
