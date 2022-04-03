@@ -101,19 +101,22 @@
 
       <div class="card-form">
         <div class="dsmovie-card">
-            
-            <div class="ds-movie-card-img" id="banner"></div>
-         
+
+          <div id="banner"></div>
+
           <div class="dsmovie-card-descrition">
+
             <h4 id="nome_do_filme"></h4>
+
             <div class="dsmovie-card-description-bottom">
               <h4>4.4</h4>
-              <div>
+              <div >
                 <img src="../img/estrela5.svg" alt="Star">
                 <img src="../img/estrela4.svg" alt="Star">
                 <img src="../img/estrela3.svg" alt="Star">
                 <img src="../img/estrela2.svg" alt="Star">
                 <img src="../img/estrela1.svg" alt="Star">
+                <br>
               </div>
               <p>50 avaliações</p>
               <!-- Button trigger modal -->
@@ -132,7 +135,7 @@
                     <div class="modal-body">
                       <label for="score">Comentario</label>
                       <div class="form-group dsmovie-form-group-coment">
-                        <textarea class="form-control" type="Comentario" id="Comentario" maxlength="255"></textarea>
+                        <label for="Comentario"></label><textarea class="form-control" type="Comentario" id="Comentario" maxlength="255"></textarea>
                     </div>
                       <div class="form-group dsmovie-form-group-av">
                         <label for="score">Informe sua avaliação</label>
@@ -167,27 +170,28 @@
         </div>
         <div class="info">
           <p>
-            <ht>Duração:</ht> 3h 01min 
+            <strong>Duração: </strong><hn id="duracao"></hn> 
             <br>
-            <ht>Tags:</ht> Ação , Fantasia , Aventura
+            <strong>Tags: </strong><hn id="tags"></hn> 
             <br>
-            <ht>Direção:</ht> Joe Russo , Anthony Russo
+            <strong>Direção: </strong><hn id="direcao"></hn> 
             <br>
-            <ht>Roteiro:</ht> Christopher Markus , Stephen McFeely
+            <strong>Roteiro: </strong><hn id="roteiro"></hn>
             <br>
-            <ht>Elenco:</ht> Robert Downey Jr., Chris Evans, Scarlett Johansson, Chris Hemsworth, Mark Ruffalo e Jeremy Renner
+            <strong>Elenco: </strong><hn id="elenco"></hn> 
             <br>
-            <ht>Título original:</ht> Avengers Endgame
+            <strong>Titulo original: </strong><hn id="titulo_original"></hn> 
           </p>
         </div>
-       <div class="watch">
+        
+        
+        <div class="watch" id="assistir">
         <h4>Assista ao filme</h4>
-        <div class="button-image-holder">
-         <a href="https://disney.com.br/filmes/vingadores-ultimato"> 
-           <img src="https://br.web.img3.acsta.net/commons/v9/common/svod_providers/square-disney.svg" 
-          class="button-img logo-provider-squared b-loaded" alt=""></div>
+        <a id="streaming">
+        <div class="button-image-holder" id="plataforma">
+          
+        </div>
         </a>
-       </div>
       </div>
 
     </section>
@@ -233,14 +237,13 @@
     </div>
     <!-- Copyright -->
   </footer>
-  
-  
+
   <script src="../form.js"></script>
- 
+
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
     crossorigin="anonymous"></script>
-  <script src="../form.js"></script>  
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
     crossorigin="anonymous"></script>

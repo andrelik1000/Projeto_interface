@@ -181,7 +181,7 @@ li a{
     padding: 10px 20px 20px 20px;
     background-color: var(--white);
     border-radius: 0 0 8px 8px;
-    height: 210px;
+    height: 225px;
     justify-content: space-between;
 }
 
@@ -196,16 +196,19 @@ li a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 126px;
 }
 
 .dsmovie-card-description-bottom img{
     width: 22px;
+    margin-bottom: 5px;
 }
 
 .dsmovie-card-description-bottom h4{
     font-size: 16px;
     font-weight: 700;
     color: var(--star-yellow);
+    margin-bottom: 2px;
 }
 
 .dsmovie-card-description-bottom p{
