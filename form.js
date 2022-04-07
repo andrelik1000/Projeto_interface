@@ -200,9 +200,92 @@ function queryString(parameter) {
         elenco.innerText = 'Zendaya, Maude Apatow, Angus Cloud, Eric Dane, Alexa Demie, Jacob Elordi, Barbie Ferreira, Nika King, Storm Reid, Hunter Schafer'
         titulo_original.innerText = 'Euphoria'
         image1.src = 'https://hbomax-images.warnermediacdn.com/2020-05/square%20social%20logo%20400%20x%20400_0.png'
-    }   
+    }else 
+    if(param_value === 'naomi'){
+        nome_do_filme.innerText = 'Naomi'
+        recomendacao.innerText = 'Não recomendado para menores de 14 anos'
+        descricao.innerText = ''
+        image.src = '../'
+        duracao.innerText = ''
+        tags.innerText = ''
+        direcao.innerText = ''
+        roteiro.innerText = ''
+        elenco.innerText = ''
+        titulo_original.innerText = ''
+        image1.src = 'https://br.web.img3.acsta.net/commons/v9/common/svod_providers/square-disney.svg'
+     
+    }else 
+    if(param_value === 'the-boys-diabolical'){
+        nome_do_filme.innerText = 'The Boys Diabolical'
+        recomendacao.innerText = 'Não recomendado para menores de 14 anos'
+        descricao.innerText = ''
+        image.src = '../'
+        duracao.innerText = ''
+        tags.innerText = ''
+        direcao.innerText = ''
+        roteiro.innerText = ''
+        elenco.innerText = ''
+        titulo_original.innerText = ''
+        image1.src = 'https://br.web.img3.acsta.net/commons/v9/common/svod_providers/square-disney.svg'
+     
+    }else 
+    if(param_value === 'the-nevers'){
+        nome_do_filme.innerText = 'The Nevers'
+        recomendacao.innerText = 'Não recomendado para menores de 14 anos'
+        descricao.innerText = ''
+        image.src = '../'
+        duracao.innerText = ''
+        tags.innerText = ''
+        direcao.innerText = ''
+        roteiro.innerText = ''
+        elenco.innerText = ''
+        titulo_original.innerText = ''
+        image1.src = 'https://br.web.img3.acsta.net/commons/v9/common/svod_providers/square-disney.svg'
+     
+    }else 
+    if(param_value === 'a-roda-do-tempo'){
+        nome_do_filme.innerText = 'A Roda do Tempo'
+        recomendacao.innerText = 'Não recomendado para menores de 14 anos'
+        descricao.innerText = ''
+        image.src = '../'
+        duracao.innerText = ''
+        tags.innerText = ''
+        direcao.innerText = ''
+        roteiro.innerText = ''
+        elenco.innerText = ''
+        titulo_original.innerText = ''
+        image1.src = 'https://br.web.img3.acsta.net/commons/v9/common/svod_providers/square-disney.svg'
+     
+    }else 
+    if(param_value === 'quanto-mais-vida-melhor'){
+        nome_do_filme.innerText = 'Quanto Mais Vida, Melhor!'
+        recomendacao.innerText = 'Não recomendado para menores de 14 anos'
+        descricao.innerText = ''
+        image.src = '../'
+        duracao.innerText = ''
+        tags.innerText = ''
+        direcao.innerText = ''
+        roteiro.innerText = ''
+        elenco.innerText = ''
+        titulo_original.innerText = 'Quanto Mais Vida, Melhor!'
+        image1.src = 'https://br.web.img3.acsta.net/commons/v9/common/svod_providers/square-disney.svg'
+     
+    }
+    else 
+    if(param_value === 'superman-and-louis'){
+        nome_do_filme.innerText = 'Quanto Mais Vida, Melhor!'
+        recomendacao.innerText = 'Não recomendado para menores de 14 anos'
+        descricao.innerText = ''
+        image.src = '../'
+        duracao.innerText = ''
+        tags.innerText = ''
+        direcao.innerText = ''
+        roteiro.innerText = ''
+        elenco.innerText = ''
+        titulo_original.innerText = 'Quanto Mais Vida, Melhor!'
+        image1.src = 'https://br.web.img3.acsta.net/commons/v9/common/svod_providers/square-disney.svg'
+     
+    }
+
 }
-
-
 queryString("filme?info")
-queryString("serie?info")
