@@ -20,15 +20,16 @@ function queryString(parameter) {
     let roteiro = document.getElementById("roteiro")
     let elenco = document.getElementById("elenco")
     let titulo_original = document.getElementById("titulo_original")
+    let streaming = document.getElementById('streaming')
     const image1 = document.createElement('img')
-    const link = document.createElement("a");
+   
 
 
     
     
     document.getElementById('banner').appendChild(image)
     document.getElementById('plataforma').appendChild(image1)
-    document.getElementById('streaming').appendChild(link)
+    
 
     if(param_value === 'vingadores_ultimato'){
             nome_do_filme.innerText = 'Vingadores Ultimato'
@@ -42,7 +43,7 @@ function queryString(parameter) {
             elenco.innerText = 'Robert Downey Jr., Chris Evans, Scarlett Johansson, Chris Hemsworth, Mark Ruffalo e Jeremy Renner'
             titulo_original.innerText = 'Avengers Endgame'
             image1.src = 'https://br.web.img3.acsta.net/commons/v9/common/svod_providers/square-disney.svg'
-            link.href ='https://www.disneyplus.com/pt-br'
+            streaming.href ='https://disney.com.br/filmes/vingadores-ultimato'
             
     }else 
     if(param_value === 'the_batman'){
@@ -57,6 +58,8 @@ function queryString(parameter) {
         elenco.innerText = 'Robert Pattinson , Zoë Kravitz , Paul Dano'
         titulo_original.innerText = 'The Batman'
         image1.src = 'https://ingresso-a.akamaihd.net/sitenovo-2017/comum/img/logoingresso@3x.png'
+        streaming.href ='https://m.ingresso.com/filme/batman?partnership=home'
+
     }else 
     if(param_value === 'eternos'){
         nome_do_filme.innerText = 'Eternos'
@@ -70,6 +73,7 @@ function queryString(parameter) {
         elenco.innerText = ''
         titulo_original.innerText = ''
         image1.src = 'https://br.web.img3.acsta.net/commons/v9/common/svod_providers/square-disney.svg'
+        streaming.href ='https://disney.com.br/filmes/eternos'
     }else 
     if(param_value === 'red'){
         nome_do_filme.innerText = ''
@@ -200,6 +204,7 @@ function queryString(parameter) {
         elenco.innerText = 'Zendaya, Maude Apatow, Angus Cloud, Eric Dane, Alexa Demie, Jacob Elordi, Barbie Ferreira, Nika King, Storm Reid, Hunter Schafer'
         titulo_original.innerText = 'Euphoria'
         image1.src = 'https://hbomax-images.warnermediacdn.com/2020-05/square%20social%20logo%20400%20x%20400_0.png'
+        streaming.href ='https://www.hbomax.com/br/pt/series/urn:hbo:series:GXKN_xQX5csPDwwEAAABj'
     }else 
     if(param_value === 'naomi'){
         nome_do_filme.innerText = 'Naomi'
