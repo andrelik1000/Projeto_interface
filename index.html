@@ -75,7 +75,8 @@
                     aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item active" >
+                    <a onclick="passarValorNaUrlFilme('vingadores_ultimato')">
                     <img src="img/Vingadores.jpeg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Vingadores Ultimato</h5>
@@ -83,8 +84,10 @@
                             <p>Deixe sua avaliação</p>
                         </a>
                     </div>
+                    </a>
                 </div>
                 <div class="carousel-item">
+                    <a onclick="passarValorNaUrlFilme('eternos')">
                     <img src="img/Eternos2.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Eternos</h5>
@@ -93,8 +96,10 @@
                         </a>
 
                     </div>
+                </a>
                 </div>
                 <div class="carousel-item">
+                    <a onclick="passarValorNaUrlFilme('euphoria')">
                     <img src="img/Euphoria.jpeg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Euphoria</h5>
@@ -103,6 +108,7 @@
                         </a>
                     </div>
                 </div>
+            </a>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
                 data-bs-slide="prev">
@@ -497,7 +503,7 @@
         </div>
         <!-- Copyright -->
     </footer>
-
+    <script src="./script.js"></script>
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"

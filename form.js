@@ -62,6 +62,19 @@ function queryString(parameter) {
         nome_do_filme.innerText = 'Eternos'
         recomendacao.innerText = 'Não recomendado para menores de 12 anos'
         descricao.innerText = 'Eternos são seres super dotados com características como imortalidade e manipulação de energia cósmica, e eles são frutos de experiências fracassadas de seu próprio criador, o Celestial Arishem, desde a criação da Terra há milhões de anos. Destinados a salvar o mundo e a raça humana dos Deviantes, seres também criados pelo Celestial, os Eternos então derrotam tais seres e seguem caminhos diferentes, esperando que seu criador volte com boas novas. Mas após séculos e milênios aguardando ele, o grupo de heróis imortais agora precisa se preparar para uma nova ameaça, e precisam lutar contra os Deviantes novamente para garantir a segurança da humanidade. Muitos conflitos internos podem surgir, entre o amor que sentem pela Terra e a necessidade de protegê-la acima de tudo, e a fé naquilo que está acima deles. Cada um deverá lutar pelo o que acredita, e defender o que for mais importante. Eternos se passa pouco tempo após os acontecimentos de Vingadores: Ultimato (2019), dentro do universo MCU, inspirado nos quadrinhos, em adaptação da Marvel Studios.'
+        image.src = '../img/Eternos2.jpg'
+        duracao.innerText = ''
+        tags.innerText = ''
+        direcao.innerText = ''
+        roteiro.innerText = ''
+        elenco.innerText = ''
+        titulo_original.innerText = ''
+        image1.src = 'https://br.web.img3.acsta.net/commons/v9/common/svod_providers/square-disney.svg'
+    }else 
+    if(param_value === 'red'){
+        nome_do_filme.innerText = ''
+        recomendacao.innerText = 'Não recomendado para menores de 14 anos'
+        descricao.innerText = ''
         image.src = '../'
         duracao.innerText = ''
         tags.innerText = ''
@@ -69,16 +82,127 @@ function queryString(parameter) {
         roteiro.innerText = ''
         elenco.innerText = ''
         titulo_original.innerText = ''
+        image1.src = 'https://br.web.img3.acsta.net/commons/v9/common/svod_providers/square-disney.svg'
+    }else 
+    if(param_value === 'uncharted_fora_do_mapa'){
+        nome_do_filme.innerText = ''
+        recomendacao.innerText = 'Não recomendado para menores de 14 anos'
+        descricao.innerText = ''
+        image.src = '../'
+        duracao.innerText = ''
+        tags.innerText = ''
+        direcao.innerText = ''
+        roteiro.innerText = ''
+        elenco.innerText = ''
+        titulo_original.innerText = ''
+        image1.src = 'https://br.web.img3.acsta.net/commons/v9/common/svod_providers/square-disney.svg'
+    } else 
+    if(param_value === 'homem-aranha_sem_volta_pra_casa'){
+        nome_do_filme.innerText = ''
+        recomendacao.innerText = 'Não recomendado para menores de 14 anos'
+        descricao.innerText = ''
+        image.src = '../'
+        duracao.innerText = ''
+        tags.innerText = ''
+        direcao.innerText = ''
+        roteiro.innerText = ''
+        elenco.innerText = ''
+        titulo_original.innerText = ''
+        image1.src = 'https://br.web.img3.acsta.net/commons/v9/common/svod_providers/square-disney.svg'
+    } else 
+    if(param_value === 'projeto_adam'){
+        nome_do_filme.innerText = ''
+        recomendacao.innerText = 'Não recomendado para menores de 14 anos'
+        descricao.innerText = ''
+        image.src = '../'
+        duracao.innerText = ''
+        tags.innerText = ''
+        direcao.innerText = ''
+        roteiro.innerText = ''
+        elenco.innerText = ''
+        titulo_original.innerText = ''
+        image1.src = 'https://br.web.img3.acsta.net/commons/v9/common/svod_providers/square-disney.svg'
+    } else 
+    if(param_value === 'venom_tempo_de_carnificina'){
+        nome_do_filme.innerText = ''
+        recomendacao.innerText = 'Não recomendado para menores de 14 anos'
+        descricao.innerText = ''
+        image.src = '../'
+        duracao.innerText = ''
+        tags.innerText = ''
+        direcao.innerText = ''
+        roteiro.innerText = ''
+        elenco.innerText = ''
+        titulo_original.innerText = ''
+        image1.src = 'https://br.web.img3.acsta.net/commons/v9/common/svod_providers/square-disney.svg'
+    } else 
+    if(param_value === 'duna'){
+        nome_do_filme.innerText = ''
+        recomendacao.innerText = 'Não recomendado para menores de 14 anos'
+        descricao.innerText = ''
+        image.src = '../'
+        duracao.innerText = ''
+        tags.innerText = ''
+        direcao.innerText = ''
+        roteiro.innerText = ''
+        elenco.innerText = ''
+        titulo_original.innerText = ''
+        image1.src = 'https://br.web.img3.acsta.net/commons/v9/common/svod_providers/square-disney.svg'
+    } else 
+    if(param_value === 'casa_gucci'){
+        nome_do_filme.innerText = ''
+        recomendacao.innerText = 'Não recomendado para menores de 14 anos'
+        descricao.innerText = ''
+        image.src = '../'
+        duracao.innerText = ''
+        tags.innerText = ''
+        direcao.innerText = ''
+        roteiro.innerText = ''
+        elenco.innerText = ''
+        titulo_original.innerText = ''
+        image1.src = 'https://br.web.img3.acsta.net/commons/v9/common/svod_providers/square-disney.svg'
+    } else 
+    if(param_value === 'filhos_do_privilegio'){
+        nome_do_filme.innerText = ''
+        recomendacao.innerText = 'Não recomendado para menores de 14 anos'
+        descricao.innerText = ''
+        image.src = '../'
+        duracao.innerText = ''
+        tags.innerText = ''
+        direcao.innerText = ''
+        roteiro.innerText = ''
+        elenco.innerText = ''
+        titulo_original.innerText = ''
+        image1.src = 'https://br.web.img3.acsta.net/commons/v9/common/svod_providers/square-disney.svg'
+    }else 
+    if(param_value === 'moonfall_ameaca_lunar'){
+        nome_do_filme.innerText = ''
+        recomendacao.innerText = 'Não recomendado para menores de 14 anos'
+        descricao.innerText = ''
+        image.src = '../'
+        duracao.innerText = ''
+        tags.innerText = ''
+        direcao.innerText = ''
+        roteiro.innerText = ''
+        elenco.innerText = ''
+        titulo_original.innerText = ''
+        image1.src = 'https://br.web.img3.acsta.net/commons/v9/common/svod_providers/square-disney.svg'
+    }   
+    if(param_value === 'euphoria'){
+        nome_do_filme.innerText = 'Euphoria'
+        recomendacao.innerText = 'Não recomendado para menores de 16 anos'
+        descricao.innerText = ' Em Euphoria, Rue Bennett (Zendaya) é uma jovem de 17 anos que acaba de sair da clínica de reabilitação após ter uma overdose. Rue sofre com transtornos mentais desde criança, o que a fez entrar em contato com drogas ainda no início da adolescência. Ela tenta agora se adaptar a uma vida "limpa" e volta a frequentar a escola. Mas, assim como ela, os demais alunos do ensino médio enfrentam seus próprios desafios, envolvendo sexo, drogas, amizades, relacionamentos amorosos, conflitos familiares, redes sociais e violência. À medida que luta contra a dependência química, Rue precisa lidar com todos os traumas e segredos da adolescência. Ela encontra apoio em uma nova amiga, Jules (Hunter Schafer), uma adolescente transgênero que acabou de se mudar para a cidade com o pai. A princípio, Jules tem suas próprias questões para lidar, porém, aos poucos, essa amizade vai se transformando em um intenso interesse amoroso.'
+        image.src = '../img/Euphoria.jpeg'
+        duracao.innerText = '54–61 minutos'
+        tags.innerText = 'Drama adolescente'
+        direcao.innerText = 'Sam Levinson, Augustine Frizzell, Jennifer Morriso, Pippa Bianco'
+        roteiro.innerText = 'Tyler Romary, Philipp A. Barnett, Jamie Feldman, Kenneth Yu'
+        elenco.innerText = 'Zendaya, Maude Apatow, Angus Cloud, Eric Dane, Alexa Demie, Jacob Elordi, Barbie Ferreira, Nika King, Storm Reid, Hunter Schafer'
+        titulo_original.innerText = 'Euphoria'
+        image1.src = 'https://hbomax-images.warnermediacdn.com/2020-05/square%20social%20logo%20400%20x%20400_0.png'
     }   
 }
-function passarUrlStreaming(link_plataforma){
 
-    let plataforma = link_plataforma
-    if(plataforma === 1){
-        window.location.href ='https://www.disneyplus.com/pt-br'
-    }else if(plataforma ===2){
-        window.location.href ='https://www.disneyplus.com/pt-br'
-    }
-}
 
 queryString("filme?info")
+queryString("serie?info")
